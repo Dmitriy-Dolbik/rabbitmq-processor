@@ -1,0 +1,17 @@
+mp:
+  messaging:
+    incoming:
+      requests:
+        connector: smallrye-rabbitmq
+        queue:
+          name: quote-requests
+        exchange:
+          name: quote-requests
+    outgoing:
+      quotes:
+        connector: smallrye-rabbitmq
+        exchange:
+          name: quotes
+
+
+
